@@ -21,7 +21,7 @@ A modern radial emote menu for FiveM that allows players to trigger animations u
 
 1. Drag the `d3-animation` folder into your FiveM `resources/` directory.
 2. Add this line to your `server.cfg`:
-   ensure emotewheel
+   ensure `emotewheel`
 3. Replace the logo image in `html/icons/server-logo.png` with your server's logo.
 4. Optionally update icons and emote names in the HTML and Lua files.
 

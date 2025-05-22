@@ -28,6 +28,11 @@ RegisterNUICallback("closeMenu", function(_, cb)
     cb("ok")
 end)
 
+RegisterNUICallback("closeWheel", function(_, cb)
+    closeMenu()
+    cb("ok")
+end)
+
 function openMenu()
     if menuOpen then return end
     menuOpen = true

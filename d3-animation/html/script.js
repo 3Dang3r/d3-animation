@@ -24,5 +24,13 @@ document.addEventListener("keydown", (e) => {
         fetch(`https://${GetParentResourceName()}/cancelEmote`, {
             method: "POST"
         });
+    } else if (e.code === "Escape") {
+        // Hide the wheel when Escape is pressed
+        document.querySelector(".wheel").classList.add("hidden");
+
+        // Optionally notify the resource
+        fetch(`https://${GetParentResourceName()}/closeWheel`, {
+            method: "POST"
+        });
     }
 });
